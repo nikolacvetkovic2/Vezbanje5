@@ -1,18 +1,15 @@
-public class Gume extends Vozilo {
+public class Gume {
 
    public String letnjeIliZimske;
 
-    public Gume(String imeVozila, int godinaProizvodnje, Gume gume) {
-        super(imeVozila, godinaProizvodnje, gume);
+    public Gume(String letnjeIliZimske) {
+        this.letnjeIliZimske = letnjeIliZimske;
     }
-
 
     @Override
     public String toString() {
         return "Gume{" +
-                "imeVozila='" + imeVozila + '\'' +
-                ", godinaProizvodnje=" + godinaProizvodnje +
-                ", gume=" + gume +
+                "letnjeIliZimske='" + letnjeIliZimske + '\'' +
                 '}';
     }
 }

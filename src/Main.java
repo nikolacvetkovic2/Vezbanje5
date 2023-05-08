@@ -8,9 +8,10 @@ public class Main {
         public static void main(String[] args) {
 
             Scanner scanner=new Scanner(System.in);
-            List<Vozilo> listaSvihVozila=new ArrayList<>();
+            List<Object> listaSvihVozila=new ArrayList<Object>();
             Vozilo vozilo;
-             Gume gume=null;
+            Gume gume;
+
 
               while (true){
                   System.out.println("Unestite vozilo:");
@@ -30,12 +31,13 @@ public class Main {
                   if(letnjeIliZimske.equalsIgnoreCase("quit")){
                       break;
                   }
-                  vozilo=new Vozilo(imeVozila,godinaProizvodnje,gume);
+                  vozilo=new Vozilo(imeVozila,godinaProizvodnje);
                    listaSvihVozila.add(vozilo);
+                   gume=new Gume(letnjeIliZimske);
+                   listaSvihVozila.add(gume);
               }
 
               for(int i=0;i< listaSvihVozila.size();i++){
-
                   System.out.println("Lista svih vozila i godina proizvodnje: " + listaSvihVozila.get(i));
     }
 }
