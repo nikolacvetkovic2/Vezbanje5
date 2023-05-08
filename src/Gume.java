@@ -8,7 +8,7 @@ public class Gume {
 
     @Override
     public String toString() {
-        return "Gume{" +
+        return "Gume:" +
                 "letnjeIliZimske='" + letnjeIliZimske + '\'' +
                 '}';
     }

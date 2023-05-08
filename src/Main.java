@@ -11,6 +11,7 @@ public class Main {
             List<Object> listaSvihVozila=new ArrayList<Object>();
             Vozilo vozilo;
             Gume gume;
+            Menjac menjac;
 
 
               while (true){
@@ -31,11 +32,19 @@ public class Main {
                   if(letnjeIliZimske.equalsIgnoreCase("quit")){
                       break;
                   }
+                  System.out.println("Unestite tip menjaca:");
+                  String tipMenjaca=scanner.next();
+                  if(tipMenjaca.equalsIgnoreCase("quit")){
+                      break;
+                  }
                   vozilo=new Vozilo(imeVozila,godinaProizvodnje);
                    listaSvihVozila.add(vozilo);
                    gume=new Gume(letnjeIliZimske);
                    listaSvihVozila.add(gume);
+                   menjac=new Menjac(tipMenjaca);
+                   listaSvihVozila.add(menjac);
               }
+
 
               for(int i=0;i< listaSvihVozila.size();i++){
                   System.out.println("Lista svih vozila i godina proizvodnje: " + listaSvihVozila.get(i));

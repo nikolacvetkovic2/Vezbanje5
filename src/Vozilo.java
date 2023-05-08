@@ -11,8 +11,8 @@ public class Vozilo {
     @Override
     public String toString() {
         return "Vozilo{" +
-                "imeVozila='" + imeVozila + '\'' +
-                ", godinaProizvodnje=" + godinaProizvodnje +
+                "ImeVozila='" + imeVozila + '\'' +
+                ", GodinaProizvodnje=" + godinaProizvodnje +
                 '}';
     }
 }
